@@ -1,84 +1,41 @@
-<div align="center">
-
-# 🌀 VORTEXOPS
-
-### AI-Powered Telemetry & Predictive Infrastructure Suite
-
-<p align="center">
-
-<img src="https://img.shields.io/badge/Java-21-red?style=for-the-badge&logo=openjdk"/>
-<img src="https://img.shields.io/badge/Spring_Boot-3.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"/>
-<img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black"/>
-<img src="https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite"/>
-<img src="https://img.shields.io/badge/PostgreSQL-15-336791?style=for-the-badge&logo=postgresql"/>
-<img src="https://img.shields.io/badge/Docker-Compose-2496ED?style=for-the-badge&logo=docker"/>
-<img src="https://img.shields.io/badge/OpenRouter-AI-8A2BE2?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/AWS-EC2-FF9900?style=for-the-badge&logo=amazonaws"/>
-
-</p>
-
-### Real-Time Infrastructure Monitoring • AI Diagnostics • Predictive Analytics
-
-*A modern enterprise-inspired telemetry platform built using Spring Boot, React, PostgreSQL, Docker, and OpenRouter AI.*
-
----
-
-⭐ **If you like this project, consider giving it a star!**
-
-</div>
-
----
-
-# 📑 Table of Contents
-
-- Overview
-- Live Demo
-- Dashboard Preview
-- Key Features
-- Architecture
-- Technology Stack
-- Project Structure
-- Installation
-- Docker Deployment
-- Environment Variables
-- API Overview
-- AI Diagnostic Engine
-- Future Roadmap
-- Contributing
-- License
-
----
-
-# 🌟 Overview
-
-VortexOps is a modern telemetry and infrastructure observability platform designed to simulate how enterprise cloud systems are monitored, analyzed, and optimized in real time.
-
-The platform continuously streams system telemetry, visualizes infrastructure metrics, simulates production incidents, and leverages AI to generate intelligent diagnostic recommendations. Inspired by modern DevOps and Site Reliability Engineering (SRE) workflows, VortexOps combines real-time monitoring with AI-assisted troubleshooting in a unified dashboard.
-
-Unlike traditional monitoring dashboards that simply display metrics, VortexOps provides contextual AI insights, enabling engineers to identify performance bottlenecks, investigate anomalies, and receive optimization recommendations without leaving the application.
-
-Built using Java 21, Spring Boot, React, PostgreSQL, Docker, and OpenRouter AI, the application demonstrates how modern cloud-native infrastructure platforms can integrate observability with artificial intelligence.
-
----
-
-# 🌐 Live Demo
-
-> **Experience the live deployment running on AWS EC2**
-
-### 🚀 http://13.51.156.99:8080
-
----
-
 # 📸 Dashboard Preview
 
-## Operations Dashboard
+## 🖥️ Operations Dashboard
 
 > *Real-time telemetry dashboard displaying CPU usage, memory utilization, infrastructure health indicators, and operational metrics.*
 
 <p align="center">
+  <img src="https://github.com/user-attachments/assets/69d7094c-40cf-4e8c-be74-1b905181043d" width="100%" alt="Operations Dashboard">
+</p>
 
-<img src="images/dashboard-overview.png" width="100%">
+---
 
+## 📈 Live Telemetry Monitoring
+
+> *Interactive telemetry stream continuously visualizing infrastructure metrics with high-frequency updates.*
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/43ff6c26-2ebf-41c5-b126-41db1eff48e7" width="100%" alt="Live Telemetry">
+</p>
+
+---
+
+## 🚨 Incident Simulation
+
+> *Inject a simulated thread leak and observe live changes across telemetry, throughput, JVM memory, and AI-assisted diagnostics.*
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/69d7094c-40cf-4e8c-be74-1b905181043d" width="100%" alt="Incident Simulation">
+</p>
+
+---
+
+## 🤖 AI Diagnostic Console
+
+> *Integrated AI assistant capable of analyzing infrastructure issues and generating optimization strategies in real time.*
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ed14d419-ea34-4344-b323-3b3fdcfaaa64" width="65%" alt="AI Diagnostic Console">
 </p>
 
 ---
