@@ -1,78 +1,117 @@
+<div align="center">
+
+# 🌀 VORTEXOPS
+
+### Enterprise AI Observability Platform
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/Java-21-EA2D2E?style=for-the-badge&logo=openjdk&logoColor=white"/>
+<img src="https://img.shields.io/badge/Spring_Boot-3.x-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"/>
+<img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black"/>
+<img src="https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white"/>
+<img src="https://img.shields.io/badge/PostgreSQL-15-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
+<img src="https://img.shields.io/badge/Hibernate-ORM-59666C?style=for-the-badge&logo=hibernate&logoColor=white"/>
+<img src="https://img.shields.io/badge/Docker-Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+<img src="https://img.shields.io/badge/OpenRouter-AI-8A2BE2?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/AWS-EC2-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white"/>
+
+<br>
+
+### 🚀 Real-Time Telemetry • AI Diagnostics • Predictive Analytics
+
+*An enterprise-inspired observability platform that combines real-time telemetry streaming, intelligent infrastructure monitoring, production incident simulation, and AI-powered diagnostics into a unified operations dashboard.*
+
+⭐ **If you like this project, consider giving it a Star!**
+
+</p>
+
+</div>
+
+---
+
+# 📑 Table of Contents
+
+- 🌟 Overview
+- 🌐 Live Demo
+- 📸 Dashboard Preview
+- ✨ Key Features
+- 🏗️ System Architecture
+- ⚙️ Technology Stack
+- 📂 Project Structure
+- 🚀 Getting Started
+- 🐳 Docker Deployment
+- ☁️ AWS Deployment
+- 🔐 Environment Variables
+- 📡 REST API
+- 🤖 AI Diagnostic Engine
+- 🛣️ Roadmap
+- 🤝 Contributing
+- 📜 License
+
+---
+
+# 🌟 Overview
+
+**VortexOps** is a modern **AI-powered observability platform** designed to demonstrate how enterprise infrastructure is monitored, analyzed, and optimized in real time.
+
+Built using **Java 21**, **Spring Boot**, **React**, **PostgreSQL**, **Docker**, and **OpenRouter AI**, the platform provides engineers with a centralized dashboard for visualizing live telemetry, simulating infrastructure incidents, and receiving intelligent AI-generated recommendations.
+
+Unlike traditional monitoring tools that only display metrics, VortexOps transforms raw telemetry into actionable insights through contextual diagnostics and predictive analysis.
+
+### 🎯 Core Objectives
+
+- 📊 Monitor infrastructure health in real time
+- 🤖 Generate AI-powered diagnostic recommendations
+- 🚨 Simulate production incidents safely
+- ☁️ Demonstrate cloud-native deployment
+- 🐳 Showcase containerized architecture
+- 📈 Learn observability and modern DevOps workflows
+
+---
+
+# 🌐 Live Demo
+
+> **Experience the application running on AWS EC2**
+
+### 🚀 http://13.51.156.99:8080
+
+---
+
 # 📸 Dashboard Preview
+
+Explore the primary capabilities of **VortexOps** through the screenshots below.
+
+---
 
 ## 🖥️ Operations Dashboard
 
-> *Real-time telemetry dashboard displaying CPU usage, memory utilization, infrastructure health indicators, and operational metrics.*
+> *Monitor CPU utilization, JVM memory, WebFlux throughput, infrastructure health, and real-time telemetry from a unified operations dashboard.*
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/69d7094c-40cf-4e8c-be74-1b905181043d" width="100%" alt="Operations Dashboard">
+<img src="https://github.com/user-attachments/assets/43ff6c26-2ebf-41c5-b126-41db1eff48e7" width="100%" alt="Operations Dashboard">
 </p>
 
 ---
 
-## 📈 Live Telemetry Monitoring
+## 🚨 Thread Leak Simulation
 
-> *Interactive telemetry stream continuously visualizing infrastructure metrics with high-frequency updates.*
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/43ff6c26-2ebf-41c5-b126-41db1eff48e7" width="100%" alt="Live Telemetry">
-</p>
-
----
-
-## 🚨 Incident Simulation
-
-> *Inject a simulated thread leak and observe live changes across telemetry, throughput, JVM memory, and AI-assisted diagnostics.*
+> *Inject a simulated production thread leak and observe live changes across CPU utilization, throughput, JVM footprint, and AI-assisted diagnostics.*
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/69d7094c-40cf-4e8c-be74-1b905181043d" width="100%" alt="Incident Simulation">
+<img src="https://github.com/user-attachments/assets/69d7094c-40cf-4e8c-be74-1b905181043d" width="100%" alt="Thread Leak Simulation">
 </p>
 
 ---
 
 ## 🤖 AI Diagnostic Console
 
-> *Integrated AI assistant capable of analyzing infrastructure issues and generating optimization strategies in real time.*
+> *Receive intelligent troubleshooting guidance, JVM tuning recommendations, SQL optimization strategies, and infrastructure insights powered by OpenRouter AI.*
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/ed14d419-ea34-4344-b323-3b3fdcfaaa64" width="65%" alt="AI Diagnostic Console">
+<img src="https://github.com/user-attachments/assets/ed14d419-ea34-4344-b323-3b3fdcfaaa64" width="70%" alt="AI Diagnostic Console">
 </p>
 
----
-
-## Live Telemetry Monitoring
-
-> *Interactive telemetry stream continuously visualizing infrastructure metrics with high-frequency updates.*
-
-<p align="center">
-
-<img src="images/live-telemetry.png" width="100%">
-
-</p>
-
----
-
-## Incident Simulation
-
-> *Simulate infrastructure failures such as thread leaks and observe system behavior in real time.*
-
-<p align="center">
-
-<img src="images/thread-leak.png" width="100%">
-
-</p>
-
----
-
-## AI Diagnostic Console
-
-> *Integrated AI assistant capable of analyzing infrastructure issues and generating optimization strategies.*
-
-<p align="center">
-
-<img src="images/ai-diagnostics.png" width="100%">
-
-</p>
 
 ---
 
