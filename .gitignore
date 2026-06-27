@@ -1,0 +1,9 @@
+# Ignore bulky frontend modules and executables
+frontend/node/
+node_modules/
+.env
+
+# Ignore compiled backend Java builds
+target/
+*.class
+*.jar

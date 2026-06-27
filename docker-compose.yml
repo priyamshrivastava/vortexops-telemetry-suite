@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  postgres-db:
+    image: postgres:15-alpine
+    container_name: vortexops-db
+    environment:
+      POSTGRES_DB: nexus_metrics_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: PriyamS1402
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d nexus_metrics_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - vortex-network
+    restart: unless-stopped
+
+  backend-app:
+    build: .
+    container_name: vortexops-backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres-db:
+        condition: service_healthy
+    environment:
+      - DB_HOST=postgres-db
+      - DB_NAME=nexus_metrics_db
+      - DB_USER=postgres
+      - DB_PASSWORD=PriyamS1402
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY:placeholder_key}
+    networks:
+      - vortex-network
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+
+networks:
+  vortex-network:
+    driver: bridge

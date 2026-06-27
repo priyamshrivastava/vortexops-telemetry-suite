@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: VortexOps
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:5432/nexus_metrics_db
+    username: postgres
+    password: PriyamS1402
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+  sql:
+    init:
+      mode: always
+
+app:
+  openrouter:
+    api-key: ${OPENROUTER_API_KEY:placeholder_key}
+    url: https://openrouter.ai/api/v1/chat/completions
+
+server:
+  port: 8080
